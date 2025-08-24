@@ -1,36 +1,114 @@
-# This is a basic workflow to help you get started with Actions
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with Us - Your Dream Vacation Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-name: CI
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Travel with Us</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#packages">Tour Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Your Dream Vacation Awaits!</h2>
+        <p>Explore amazing destinations around the world with our exclusive tour packages.</p>
+        <a href="#packages" class="button">See Our Tour Packages</a>
+    </section>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate travel experts, dedicated to providing you with unforgettable experiences. From breathtaking mountains to serene beaches, we offer everything you need for your perfect vacation.</p>
+    </section>
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    <!-- Tour Packages Section -->
+    <section id="packages">
+        <h2>Our Tour Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <h3>Beach Paradise</h3>
+                <p>Relax on the beautiful beaches of the Maldives with a 7-day package.</p>
+                <a href="#contact" class="button">Book Now</a>
+            </div>
+            <div class="package">
+                <h3>Mountain Adventure</h3>
+                <p>Hike the stunning mountains of Nepal with our expert guides.</p>
+                <a href="#contact" class="button">Book Now</a>
+            </div>
+            <div class="package">
+                <h3>Cultural Exploration</h3>
+                <p>Discover the rich history of ancient civilizations in Greece.</p>
+                <a href="#contact" class="button">Book Now</a>
+            </div>
+        </div>
+    </section>
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to book your next adventure? Get in touch with us today!</p>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Samarqand Rasmi</title>
+</head>
+<body style="text-align:center;">
+
+  <h1>Samarqand</h1>
+  <img src="images/Samarkand.jpg" alt="Samarkand" width="900">
+
+</body>
+</html>
+
+  <img src="images/samarqand.jpg" alt="samarqand" width="900">
+
+</body>
+</html>
+
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Toshkent</title>
+</head>
+<body style="text-align:center;">
+
+  <h1>Toshkent</h1>
+  <img src="images/toshkent.jpg" alt="toshkent" width="900">
+
+  </body>
+</html>
+
+  <img src="images/Toshqent.jpg" alt="toshkent" width="900">
+
+  </body>
+</html>
